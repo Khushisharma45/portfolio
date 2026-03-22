@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
-import profilePic from "../assets/profile-abstract.jpg"; // using existing asset for now
+import profilePic from "../assets/profile-photo.png"; // using existing asset for now
 
 const Hero = () => {
   return (
