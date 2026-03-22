@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import profilePic from "../assets/profile-photo.png"; // using existing asset for now
 
 const Hero = () => {
   return (
@@ -67,8 +68,12 @@ const Hero = () => {
           className="flex justify-center"
         >
           <div className="relative">
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full glow-border bg-secondary flex items-center justify-center animate-float">
-              <span className="text-6xl md:text-8xl font-extrabold gradient-text">KS</span>
+            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/30 glow-border bg-secondary flex items-center justify-center animate-float">
+              <img
+                src={profilePic}
+                alt="Khushi Sharma"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -inset-4 rounded-full border border-accent/20 -rotate-12" />
           </div>
